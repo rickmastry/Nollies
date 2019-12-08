@@ -27,12 +27,12 @@ map.addLayer({
 "features": [{
 "type": "Feature",
 "properties": {
-"description": "<strong>Don The Mons Irie Items</strong><p><a href=\"http://www.donthemonsirieitems.com/\" target=\"_blank\" title=\"Opens in a new window\">Don The Mons Irie Items</a> is a screenprinting shop at its finest - 8:00a.m.- 6:00 p.m.</p>",
-"icon": "clothing-store"
+"description": "<strong>Nollies Taco Joint</strong><p><a href=\"http://www.nolliescb.com/\" target=\"_blank\" title=\"Opens in a new window\">Nollies Taco Joint</a> - Tacos at its finest - 11:00a.m.- 9:00 p.m.</p>",
+"icon": "castle"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [-77.899680, 34.034980]
+"coordinates": [-77.891470, 34.036450]
 }
 }]
 }
