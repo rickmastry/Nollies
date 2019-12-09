@@ -4,8 +4,8 @@ function openSideMenu(){
    
 }
 function closeSideMenu(){
-    document.getElementById('side-menu').style.width = '0';
-   
+   document.getElementById('side-menu').style.width = '0';
+   event.preventDefault();
 }
 
 
