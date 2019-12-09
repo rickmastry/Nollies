@@ -15,6 +15,7 @@ font-family: 'Public Sans', sans-serif;
     --secondarySpacing: 0.25rem;
     --mainTransition: all 0.3s linear;
     --mainRed: rgb(139, 55, 55);
+    --secondaryColor: rgb(13, 124, 69);
   }
 
 * {
@@ -242,6 +243,11 @@ img {
     border:solid black 2px;
 }
 
+img.menu{
+  border: none;
+  
+}
+
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -413,6 +419,12 @@ footer{
   img {
     margin-bottom:10px;
     border-radius: 50%;
+}
+
+img.menu{ 
+  width: 300px !important;
+  height: 250px !important;
+  border-radius: 2px;
 }
 
 .sectionid-contact{
