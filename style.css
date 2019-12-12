@@ -15,7 +15,7 @@ font-family: 'Public Sans', sans-serif;
     --secondarySpacing: 0.25rem;
     --mainTransition: all 0.3s linear;
     --mainRed: rgb(139, 55, 55);
-    --secondaryColor: rgb(13, 124, 69);
+    --secondaryColor: rgb(250, 232, 192);
   }
 
 * {
@@ -40,7 +40,8 @@ a:hover{
 body {
     width:100%;
     color: var(--mainBlack);
-    background: var(--mainRed);
+    /*background: var(--mainRed);*/
+    background: var(--secondaryColor);
     font-family: 'Public sans', sans-serif;
   }
 
@@ -109,11 +110,12 @@ html {
 }
 
 .navactive{
-    border-bottom: 1px solid #96E16B;
+    /*border-bottom: 1px solid #96E16B;*/
+    border-bottom: var(--secondaryColor)1px solid;
 }
 
   .navigation:hover {
-    color: var(--primaryColor) !important;
+    color: var(--mainRed) !important;
     
   }
 
@@ -285,7 +287,7 @@ p.drink-text {
 }
 
 .email-info:hover{
-  color:var(--primaryColor) !important;
+  color:var(--mainRed) !important;
 }
 
 #address{
@@ -324,10 +326,16 @@ footer{
  }
  
  a.icons:hover{
-  color: var(--primaryColor);
+  color: var(--mainRed);
  }
 
 @media screen and (max-width: 768px){
+  .menu-img-section{
+    grid-template-columns: 1fr;
+  text-align: center;
+  align-items: center;
+  }
+ 
   .contact-info{
     font-size: 1.5rem;
   }
@@ -422,7 +430,7 @@ footer{
 }
 
 img.menu{ 
-  width: 300px !important;
+  width: 250px !important;
   height: 250px !important;
   border-radius: 2px;
 }
