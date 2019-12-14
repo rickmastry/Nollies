@@ -8,6 +8,7 @@ function closeSideMenu(){
    
 }
 
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiamFocmlrIiwiYSI6ImNrMDM3dGhzaDBjZ3gzaG54OTR2c3FsY3AifQ.heM_Q5Kt9MGtEP9r4-UEzg';
 var map = new mapboxgl.Map({
 container: 'map',

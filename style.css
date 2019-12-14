@@ -25,9 +25,12 @@ font-family: 'Public Sans', sans-serif;
     padding: 0;
     box-sizing: border-box;
   }
+  
   html {
     scroll-behavior: smooth;
   }
+
+
 
 a{
     text-decoration: none !important;
@@ -287,6 +290,10 @@ p.drink-text {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
+}
+
+#sectionid-header{
+  height:50px;
 }
 
 .email-info{
