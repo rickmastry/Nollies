@@ -4,6 +4,7 @@ function openSideMenu(){
    
 }
 function closeSideMenu(){
+    event.preventDefault();
     document.getElementById('side-menu').style.width = '0';
    
 }
