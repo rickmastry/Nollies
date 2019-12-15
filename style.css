@@ -368,7 +368,7 @@ footer{
   overflow: hidden;
 }
 
- .img-container:hover .bag-btn {
+ .img-container:hover #bag-btn {
   transform: translateX(0);
 }
 .product-img {
@@ -396,7 +396,7 @@ footer{
   text-align: center;
 }
 
-.bag-btn {
+#bag-btn {
   position: absolute;
   top: 70%;
   right: 0;
@@ -410,7 +410,26 @@ footer{
   transform: translateX(101%);
   cursor: pointer;
 }
-.bag-btn:hover {
+#bag-btn:hover {
+  color: var(--mainWhite);
+}
+
+#cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--mainGreen);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}
+
+.fas.fa-cart-plus{
   color: var(--mainWhite);
 }
 

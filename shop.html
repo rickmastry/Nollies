@@ -11,6 +11,7 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
     <script src="https://kit.fontawesome.com/c3c9035355.js"></script>
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.4/default/snipcart.css" />
 </head>
 <body>
     <div class="hero-header" id="hero-header"></div>
@@ -23,8 +24,16 @@
                             <li><a class="navigation" href="menu.html">Menu</a></li>
                             <li><a class="navigation" href="index.html#sectionid-header">Contact</a></li>
                             <li><a class="navigation" href="https://www.theasys.io/viewer/cM2X9wQt1BHRd4X6PXGgg9iDYXqkdb/">Tour</a></li>
-                            <li><a class="navigation" href="#footer">Social</a></li>
                             <li><a class="navigation" href="shop.html">Shop</a></li>
+                            <div id="full-cart">
+                                <div id="cart-btn" class="snipcart-checkout">
+                                    <span class="nav-icons">
+                                        <i class="fas fa-cart-plus"></i>
+                                    </span>
+                                    <div class="cart-items"><span class="snipcart-items-count"></span></div>
+                                </div>
+                                </div>
+                            <!--<button class="snipcart-checkout">Checkout<span class="snipcart-items-count"></span><span class="snipcart-total-price"></span></button>-->
                         </ul>
                 <span class="nav-icon" onclick="openSideMenu();"><i class="fas fa-bars"></i>
                 </span>
@@ -39,8 +48,8 @@
                 <a href="menu.html">Menu</a>
                 <a href="#sectionid-header">Contact</a>
                 <a href="https://www.theasys.io/viewer/cM2X9wQt1BHRd4X6PXGgg9iDYXqkdb/">Tour</a>
-                <a href="#footer">Social</a>
                 <a href="shop.html">Shop</a>
+                <button class="snipcart-checkout">Click here to checkout</button>
             </div>
         </nav>
         <header class="hero" id="hero">
@@ -57,7 +66,14 @@
                <article class="product">
                     <div class="img-container">
                         <img src="images/4640.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
+                        <button id="bag-btn"  class="snipcart-add-item"
+                        data-item-id="starry-night"
+                        data-item-price="79.99"
+                        data-item-url="shop.html"
+                        data-item-description="High-quality item from Nollies Taco Shop."
+                        data-item-image="images/4640.jpg"
+                        data-item-name="The Rasta T-Shirt">
+                        <i class="fas fa-shopping-cart"></i>Add To Bag</button>
                     </div>
                     <h3>Rasta Tee</h3>
                     <h4>$21.99</h4>
@@ -65,7 +81,7 @@
                <article class="product">
                     <div class="img-container">
                         <img src="images/4640.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
+                        <button id="bag-btn" data-id="2"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
                     </div>
                     <h3>Rasta Tee</h3>
                     <h4>$21.99</h4>
@@ -73,7 +89,7 @@
                <article class="product">
                     <div class="img-container">
                         <img src="images/4640.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
+                        <button id="bag-btn" data-id="3"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
                     </div>
                     <h3>Rasta Tee</h3>
                     <h4>$21.99</h4>
@@ -81,7 +97,7 @@
                <article class="product">
                     <div class="img-container">
                         <img src="images/4640.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
+                        <button id="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
                     </div>
                     <h3>Rasta Tee</h3>
                     <h4>$21.99</h4>
@@ -89,7 +105,7 @@
                <article class="product">
                     <div class="img-container">
                         <img src="images/4640.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
+                        <button id="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
                     </div>
                     <h3>Rasta Tee</h3>
                     <h4>$21.99</h4>
@@ -97,7 +113,7 @@
                <article class="product">
                     <div class="img-container">
                         <img src="images/4640.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
+                        <button id="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>Add To Bag</button>
                     </div>
                     <h3>Rasta Tee</h3>
                     <h4>$21.99</h4>
@@ -124,7 +140,8 @@
                 </div>
          </footer>
     
-       
+      <div hidden id="snipcart" data-api-key="M2U2YmMxNDUtYjZkMi00Njk1LTlkYWEtODdjZTcyNzVhZTI1NjM3MTIwMzQ5NzY0NTY0MzU1"></div>  
      <script src="js/app.js"></script>   
+     <script src="https://cdn.snipcart.com/themes/v3.0.4/default/snipcart.js"></script>
     </body>
     </html>
